@@ -28,5 +28,5 @@ jobs:
     steps:
        - name: get username from set_outputs job
          run: |
-          echo "Name from set_outputs job: ${{ needs.set_ouputs.outputs.name }}"
+          echo "Name from set_outputs job: ${{ needs.set_outputs.outputs.name }}"
     
