@@ -9,8 +9,8 @@ env:
 jobs:
   set_outputs:
     runs-on: ubuntu-latest
-    outputs:
-      name: ${{ steps.set-username.outputs.user }}
+    # outputs:
+    #   name: ${{ steps.set-username.outputs.user }}
     steps:
       - name: Set username
         id: set-username
