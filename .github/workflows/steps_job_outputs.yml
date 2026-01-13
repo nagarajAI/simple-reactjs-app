@@ -12,7 +12,7 @@ jobs:
       - name: Set username
         id: set-username
         run: | 
-          echo 'user=${{env.USERNAME}}' >> GITHUB_OUTPUT
+          echo "user=${{env.USERNAME}}" > GITHUB_OUTPUT
           
       - name: print username
         run: | 
