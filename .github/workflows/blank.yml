@@ -35,3 +35,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project -${{vars.PROJECT_ID}}.
+      - name: Context github metadata variables
+        run: |
+          echo "Github Repository: ${{github.repository}}"
+          echo "Github Action Triggerd by: ${{gtihub.triggering_actor}}"
+          echo "Github Action workflow name: ${{gtihub.workflow}}"
