@@ -38,5 +38,5 @@ jobs:
       - name: Context github metadata variables
         run: |
           echo "Github Repository: ${{github.repository}}"
-          echo "Github Action Triggerd by: ${{gtihub.triggering_actor}}"
-          echo "Github Action workflow name: ${{gtihub.workflow}}"
+          echo "Github Action Triggerd by: ${{github.triggering_actor}}"
+          echo "Github Action workflow name: ${{github.workflow}}"
