@@ -1,8 +1,11 @@
 name: outputs workflow
+
 on:
   workflow_dispatch:
+
 env:
   USERNAME: 'Nagaraj'
+
 jobs:
   set_outputs:
     runs-on: ubuntu-latest
@@ -11,9 +14,9 @@ jobs:
     steps:
       - name: Set username
         id: set-username
-        run: | 
-          echo "user=${{env.USERNAME}}" > GITHUB_OUTPUT
-          
+        run: |
+          echo "user=${USERNAME}" >> $GITHUB_OUTPUT
+
       - name: print username
-        run: | 
+        run: |
           echo "Username is: ${{ steps.set-username.outputs.user }}"
